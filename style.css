@@ -1,0 +1,174 @@
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 5%;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+}
+
+ul.topnav li {
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Helvetica;
+  text-transform: uppercase;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: white;}
+
+ul.topnav li.left {float: left; font: bold 2.5vw helvetica;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.left, 
+  ul.topnav li {float: none;}
+}
+
+.container p {
+  font: 1.5vw helvetica;
+  letter-spacing: .03vw;
+  float: left;
+}
+a {
+  text-decoration: none;
+  font: bold 1.5vw helvetica;
+  display: inline-block;
+  padding-top: 10vh;
+}
+.hover-underline-animation-orange {
+  display: inline-block;
+  position: relative;
+  color: orange;
+  font-size: 1.5vw;
+}
+.hover-underline-animation-orange:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: .2vw;
+  bottom: 0;
+  left: 0;
+  background-color: orange;
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation-orange:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+.hover-underline-animation{
+  display: inline-block;
+  position: relative;
+  color: black;
+  font-size: 1.5vw;
+}
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: .2vw;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+.type{
+  display: inline-block;
+}
+.typed-out{
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  animation: typing 1s steps(20, end) forwards, blinking .8s infinite;
+  font: bold 5vw helvetica;
+  width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blinking {
+  from { border-color: transparent }
+  to { border-color: orange; }
+}
+.container {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10vw;
+  padding-left: 10%; padding-right: 10%; padding-bottom: 5%;
+}
+
+.personal {
+  width: 35vw;
+  float: right;
+  padding-right: 10%;
+}
+
+
+.section-heading {
+  text-align:center;
+  color:#102C4E;
+  margin-top: 150px;
+  margin-bottom:70px;
+  font-size: 35px;
+}
+.app {
+  display: grid;
+  grid-gap: 10%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-bottom: 10%;
+} 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 20vw;
+  margin: auto;
+  text-align: center;
+  font-family: helvetica;
+  font-size: 1.5vw;
+}
+
+.subheader {
+  color: grey;
+  font-size: 1.5vw;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.5vw;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+
