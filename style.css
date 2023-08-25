@@ -22,7 +22,7 @@
 
 .topnav .icon {
   display: none;
-  font-size: 4.5vh;
+  font-size: 4vh;
 }
 
 .hover-underline-animation{
@@ -126,7 +126,7 @@
   border-right: .15em solid orange;
   white-space: nowrap;
   animation: typing 1s steps(20, end) forwards, blinking .8s infinite;
-  font: bold 7vh helvetica;
+  font: bold 6.3vh helvetica;
   width: 0;
 }
 @keyframes typing {
