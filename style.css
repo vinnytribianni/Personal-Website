@@ -126,7 +126,7 @@
   border-right: .15em solid orange;
   white-space: nowrap;
   animation: typing 1s steps(20, end) forwards, blinking .8s infinite;
-  font: bold 7.5vh helvetica;
+  font: bold 7vh helvetica;
   width: 0;
 }
 @keyframes typing {
