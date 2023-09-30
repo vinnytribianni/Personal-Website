@@ -1,0 +1,130 @@
+/* Main Elements */
+
+.contain {
+    width: 80%;
+    margin: 0 auto;  
+} 
+.header h1{
+    display: inline-block;
+    font: bold 30px helvetica;
+}
+.header a {
+    float: right;
+    font-size: 25px;
+    color: black;
+    padding: 22px 10px 5px 10px;
+}
+.contain h2{
+    font: bold 23px helvetica;
+    color: black;
+}
+.contain p {
+    font: 20px helvetica;
+    color: gray;
+}
+.contain p1 {
+    font-size: 30px;
+}
+.header a:hover {
+    color: orange;
+}
+.image {
+    float: right;
+    width: 300px;
+    padding: 5px 5px 5px 5px;
+    text-align: right;
+}
+hr.rounded {
+    border-top: 4px solid black;
+    border-radius: 5px;
+    float: right;
+    width: 40vw;
+    margin-left: 10px;
+}
+.subheader {
+    font: bold 23px helvetica;
+    color: black;
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+/* Tile Layout */
+
+.projects {
+    display: inline-block;
+}
+.large_tile {
+    margin-bottom: 20px;
+    background-image: url(gradient.png);
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    float: left;
+}
+.large_tile h3 {
+    font: bold 23px helvetica;
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.large_tile p {
+    font: 20px helvetica;
+    color: white;
+    padding: 20px 20px 20px 20px;
+}
+.large_tile a {
+    font: 20px helvetica;
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px 20px 20px;
+}
+
+/* Underline Animation */
+
+.hover-underline-animation{
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 17px;
+    left: 0;
+    background-color: white;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+  }
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+
+/* Typing Animation */
+
+.type{
+    display: inline-block;
+}
+.typed-out{
+    overflow: hidden;
+    border-right: .2em solid orange;
+    white-space: nowrap;
+    animation: typing 1s steps(20, end) forwards, blinking .8s infinite;
+    font: bold 30px helvetica;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blinking {
+    from { border-color: transparent }
+    to { border-color: orange; }
+}
