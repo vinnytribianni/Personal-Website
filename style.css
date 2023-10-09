@@ -54,12 +54,12 @@ hr.rounded {
 
 /* Sizing Adjustment for Mobile Screens */
 
-@media (max-width: 490px) {
+@media (max-width: 520px) {
     .header h1 {
-        font: bold 12px helvetica;
+        font: bold 20px helvetica;
     }
     .header a {
-        font-size: 9px;
+        font-size: 14px;
     }
     .image {
         width: 260px;
