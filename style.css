@@ -56,10 +56,10 @@ hr.rounded {
 
 @media (max-width: 490px) {
     .header h1 {
-        font: bold 23px helvetica;
+        font: bold 20px helvetica;
     }
     .header a {
-        font-size: 18px;
+        font-size: 15px;
     }
     .image {
         width: 260px;
