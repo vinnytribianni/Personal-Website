@@ -76,6 +76,7 @@ hr.rounded {
 .large_tile {
     margin-bottom: 20px;
     background-image: url(gradient.png);
+    background-size: cover;
     width: 100%;
     height: auto;
     position: relative;
